@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <form>
         <h1>Dados pessoais do candidato</h1>
         <fieldset>
-            <legend>Cadastro</legend>
-            <div class="flexHorizontal">
+            <legend class="ec">Cadastro</legend>
+            <div class="flex1">
                 <div>
                     <label for="nomeUsuario">Nome completo:</label>
                     <input type="text" id="nomeUsuario" name="nomeUsuario" required>
@@ -30,7 +31,7 @@
                 </div>
             </div>
     
-            <div class="flexHorizontal">
+            <div class="flex1">
                 <div>
                     <label for="emailUsuario">E-mail:</label>
                     <input type="email" name="emailUsuario" id="emailUsuario" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="" required>
@@ -43,9 +44,9 @@
             </div>
     
             <div>
-                <p class="textoCentralizado">Preferência de Contato</p>
+                <p>Preferência de Contato</p>
                     
-                <div class="flexCentral">
+                <div>
                     <div>
                         <input type="radio" name="preferenciaContato" id="contatoPorEmail">
                         <label for="contatoPorEmail" class="labelInline">E-mail</label>
@@ -59,10 +60,10 @@
             </div>
         </fieldset> 
     
-        <fieldset class="flexVertical"> 
-            <legend>Endereço</legend>
+        <fieldset> 
+            <legend class="ec">Endereço</legend>
             
-            <div class="flexHorizontal"> 
+            <div class="flex1"> 
                 <div> 
                     <label for="logradouroUsuario">Logradouro:</label>
                     <input type="text" name="logradouroUsuario" id="logradouroUsuario" required>
@@ -73,7 +74,7 @@
                 </div>
             </div> 
     
-            <div class="flexHorizontal"> 
+            <div class="flex1"> 
                 <div>
                     <label for="bairroUsuario">Bairro (opcional):</label>
                     <input type="text" name="bairroUsuario" id="bairroUsuario">
@@ -84,7 +85,7 @@
                 </div> 
             </div> 
     
-            <div class="flexHorizontal">
+            <div class="flex1">
                 <div>
                     <label for="estadoUsuario">Estado:</label>
     
@@ -120,9 +121,10 @@
                         <option value="tocantins">TO</option>
                     </select>
                 </div>
+
                 <div>
                     <label for="cepUsuario">CEP:</label>
-                    <input type="text" name="cepUsuario" id="cepUsuario" pattern="[0-9]{5}-[0-9]{3}$" placeholder="" required>
+                    <input type="text" name="cepUsuario" id="cepUsuario" pattern="[0-9]{5}-[0-9]{3}$" placeholder="00000-000" required>
                 </div>
             </div>
         </fieldset> 
@@ -133,7 +135,7 @@
         </div>
         
         
-        <div class="flexHorizontal">
+        <div class="flex1">
             <button id="botaoEnviar" type="submit">Enviar</button>
             <button id="botaoLimpar" type="reset">Limpar</button>
         </div>

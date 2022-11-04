@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Quicksand&display=swap');
+
+body{
+    color: rgb(0, 0, 0);
+    background: linear-gradient(#718355, #87986A, #97A97C, #A6B98B, #B5C99A,#CFE1B9);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 26px ;
+    text-align: justify;
+
+ }
+
+ H1{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+ }
+
+ .flex1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div {
+    margin: 10px;
+}
+
+form {
+    max-width: 800px;
+    border-radius: 20px;
+    border: 3px solid #4d583b;
+    padding: 10px;
+    margin: auto;
+}
+
+select {
+    border: 1px solid white;
+    transition: border 0.25s linear;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+}
+
+label.labelInline {
+    display: inline;
+}
+
+input, button {
+    outline: none;
+    box-sizing: border-box;
+}
+
+input {
+    border: 1px solid white;
+    transition: border 0.25s linear;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: solid #cfe1b98f 1px;
+    padding: none;
+    border-radius: 50px;
+}   
+
+button {
+    transition: box-shadow 0.25s linear;
+    cursor: pointer;
+    
+}
+
+input:hover,
+input:focus,
+select:hover,
+select:focus {
+    border: #4d583b 3px solid;
+}
+
+.ec{
+    text-align: center;
+}
